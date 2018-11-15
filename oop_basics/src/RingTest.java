@@ -1,8 +1,8 @@
 public class RingTest {
     public static void main(String[] args) {
         Ring minuRing = new Ring();
-        minuRing.pindala();
+        minuRing.ringiKirjeldus();
         Ring teineRing = new Ring(2.7);
-        teineRing.pindala();
+        teineRing.ringiKirjeldus();
     }
 }
