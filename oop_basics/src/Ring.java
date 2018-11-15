@@ -18,7 +18,7 @@ public class Ring {
 
     public void ringiKirjeldus() {
         System.out.println("Antud ringi raadius on " + raadius);
-        double ringiPindala = pindala();
+        Double ringiPindala = pindala();
         System.out.println("Ringi pindala on siis " + Math.round(ringiPindala * 100) / 100.0);
     }
 }
