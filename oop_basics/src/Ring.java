@@ -7,7 +7,9 @@ public class Ring {
         this.raadius = 0.0;
     }
 
-
+    public Ring(double r) {
+        this.raadius = r;
+    }
 
     public void pindala() {
         double s = 3.14 * raadius * raadius;
