@@ -19,8 +19,16 @@ public class Punkt {
         else this.veerand = 0;
     }
 
+    public Double getX() {
+        return x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+
     public void valjastaKirjeldus() {
         System.out.println("See on punkt " + this.nimetus + " ja selle koordinaadid on " + this.x + " ja " + this.y);
-        System.out.println("Punkt " + this.nimetus + " asub " + this.veerand + " veerandil");
+        System.out.println("Punkt " + this.nimetus + " asub " + this.veerand + "." + " veerandil");
     }
 }
