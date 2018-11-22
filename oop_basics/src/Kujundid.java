@@ -5,6 +5,10 @@ public class Kujundid {
         Kujund kolmnurk = new Kujund("Kolmnurk");
 
         ring.valjastaKirjeldus();
+
+        ring.setNimetus("Ruut");
+        ring.valjastaKirjeldus();
+
         ruut.valjastaKirjeldus();
         kolmnurk.valjastaKirjeldus();
     }
