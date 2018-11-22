@@ -24,6 +24,10 @@ public class Kujund {
         this.nurkadeArv = nurkadeArv;
     }
 
+    public Double getPindala() {
+        return pindala;
+    }
+
     //getterid
     public String getNimetus() {
         return nimetus;
@@ -37,9 +41,14 @@ public class Kujund {
         return nurkadeArv;
     }
 
+    public void setPindala(Double pindala) {
+        this.pindala = pindala;
+    }
+
     // tüübi tegevused - klassi meetodid
     public void arvutaPindala() {
         System.out.println("Kujund klassi arvutaPindala() meetod");
+        System.out.println(this.pindala);
     }
 
     public void valjastaKirjeldus() {

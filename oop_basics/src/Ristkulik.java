@@ -14,6 +14,17 @@ public class Ristkulik extends Kujund {
         System.out.println("Ristküliku klassi konstruktor");
     }
 
+    public void arvutaPindala(Boolean tapsus) {
+        this.setPindala(this.pikkus * this.laius);
+        Double pindala = this.getPindala();
+        System.out.print("Pindala = ");
+        if (tapsus) {
+            System.out.println(pindala);
+        } else {
+            System.out.println(Math.round(pindala));
+        }
+    }
+
     @Override
     public void valjastaKirjeldus() {
         System.out.println("Ristküliku klassi valjastaKirjeldus()");

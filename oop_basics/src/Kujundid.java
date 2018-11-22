@@ -14,6 +14,7 @@ public class Kujundid {
 
         Ristkulik ristkulik = new Ristkulik("Ristkülik", 10.0, 20.0);
         ristkulik.valjastaKirjeldus();
+        ristkulik.arvutaPindala(false);
 
     }
 }
