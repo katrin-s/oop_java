@@ -17,10 +17,12 @@ public class Ristkulik extends Kujund {
     @Override
     public void valjastaKirjeldus() {
         System.out.println("Ristküliku klassi valjastaKirjeldus()");
-        System.out.println();
+        System.out.println(this.getNimetus());
         System.out.println("Pikkus = " + this.pikkus);
         System.out.println("Laius = " + this.laius);
-        System.out.println();
+        if (this.getNurkadeOlemasolu()) {
+            System.out.println("Kokku on " + this.getNurkadeArv() + " nurka");
+        }
         System.out.println("Nurgad = " + this.nurk + " kraadi");
     }
 }
