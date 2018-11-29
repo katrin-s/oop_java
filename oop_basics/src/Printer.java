@@ -24,4 +24,18 @@ public class Printer {
             return -1;
         }
     }
+
+    public Integer prindi(Integer lehtedeArv) {
+        Integer paberiKulu = lehtedeArv;
+        if (this.kahepoolne) {
+            paberiKulu = lehtedeArv / 2 + lehtedeArv % 2;
+            System.out.println("Kahepoolne printimine");
+        }
+        this.paberPrintimiseks = this.paberPrintimiseks - paberiKulu;
+        return paberiKulu;
+    }
+
+    public Integer getPaberPrintimiseks() {
+        return paberPrintimiseks;
+    }
 }
