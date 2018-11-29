@@ -12,15 +12,15 @@ public class Auto {
     }
 
     public void kaivita() {
-        System.out.println("Auto käivitus");
+        System.out.println("Auto käivitus.");
     }
 
     public void kiirenda() {
-        System.out.println("Auto kiirendas");
+        System.out.println("Auto kiirendas.");
     }
 
     public void pidurda() {
-        System.out.println("Auto pidurdas");
+        System.out.println("Auto pidurdas.");
     }
 
     public String getNimetus() {

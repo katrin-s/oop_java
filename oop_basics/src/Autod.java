@@ -1,6 +1,6 @@
 public class Autod {
     public static void main(String[] args) {
-        Auto auto = new Auto("Mingi Auto", 40);
+        Auto auto = new Auto("Mingi auto", 40);
         auto.kaivita();
         auto.kiirenda();
         auto.pidurda();

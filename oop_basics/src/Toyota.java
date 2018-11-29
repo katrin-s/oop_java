@@ -5,16 +5,16 @@ public class Toyota extends Auto {
 
     @Override
     public void kaivita() {
-        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " käivitus");
+        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " käivitus.");
     }
 
     @Override
     public void kiirenda() {
-        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " kiirendas");
+        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " kiirendas.");
     }
 
     @Override
     public void pidurda() {
-        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " pidurdas");
+        System.out.println(getClass().getSimpleName() + " " + this.getNimetus() + " pidurdas.");
     }
 }
