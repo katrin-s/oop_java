@@ -15,6 +15,6 @@ public class Magamistuba {
         lamp.lulita(); // lülitasime sisse
         System.out.println("Nüüd saab magada");
         lamp.lulita(); // lülitame välja
-
+// kommentaar kontrollimiseks
     }
 }
