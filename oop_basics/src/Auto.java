@@ -10,4 +10,20 @@ public class Auto {
         this.rattad = 4;
         this.mootor = true;
     }
+
+    public void kaivita() {
+        System.out.println("Auto käivitus");
+    }
+
+    public void kiirenda() {
+        System.out.println("Auto kiirendas");
+    }
+
+    public void pidurda() {
+        System.out.println("Auto pidurdas");
+    }
+
+    public String getNimetus() {
+        return nimetus;
+    }
 }
