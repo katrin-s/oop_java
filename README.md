@@ -11,4 +11,4 @@
 6) Klassi kirjelduste laiendamine päriluse abil; extends võtmesõna kasutamine; super võtmesõna kasutamine
 7) Ülekatmine (@override) ja üledefineerimine
 8) Kompositsiooni abil erinevatest komponentidest objekti loomine
-9) Kapseldamine objekti turvamiseks; public vs private; getterid ja setterid
+9) Kapseldamine objekti turvamiseks; ```public``` vs ```private```; getterid ja setterid
