@@ -8,3 +8,7 @@
 * [idea](https://www.jetbrains.com/idea/) - IDEA editor
 4) Tüübi konstruktor
 5) Konstruktor ilma parameetrita ja parameetriga
+6) Klassi kirjelduste laiendamine päriluse abil; extends võtmesõna kasutamine; super võtmesõna kasutamine
+7) Ülekatmine (@override) ja üledefineerimine
+8) Kompositsiooni abil erinevatest komponentidest objekti loomine
+9) Kapseldamine objekti turvamiseks; public vs private; getterid ja setterid
