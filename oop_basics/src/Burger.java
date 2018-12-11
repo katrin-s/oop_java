@@ -3,64 +3,69 @@ public class Burger {
     private String liha;
     private String sai;
     private Double hind;
+
     private String lisand1;
-    private Double lisand1hind;
+    private Double lisand1Hind;
+
     private String lisand2;
-    private Double lisand2hind;
+    private Double lisand2Hind;
+
     private String lisand3;
-    private Double lisand3hind;
+    private Double lisand3Hind;
+
     private String lisand4;
-    private Double lisand4hind;
+    private Double lisand4Hind;
 
     public Burger(String nimetus, String liha, String sai, Double hind) {
         this.nimetus = nimetus;
         this.liha = liha;
         this.sai = sai;
         this.hind = hind;
-        this.lisand1 = "salat";
-        this.lisand2 = "tomat";
-        this.lisand3 = "muna";
-        this.lisand4 = "juust";
-        this.lisand1hind = 0.5;
-        this.lisand2hind = 0.6;
-        this.lisand3hind = 0.7;
-        this.lisand4hind = 0.9;
     }
 
-    public String getNimetus() {
-        return nimetus;
+    public void valiLisand1(String lisand1, Double lisand1Hind) {
+        this.lisand1 = lisand1;
+        this.lisand1Hind = lisand1Hind;
     }
 
-    public String getLiha() {
-        return liha;
+    public void valiLisand2(String lisand2, Double lisand2Hind) {
+        this.lisand2 = lisand2;
+        this.lisand2Hind = lisand2Hind;
     }
 
-    public String getSai() {
-        return sai;
+    public void valiLisand3(String lisand3, Double lisand3Hind) {
+        this.lisand3 = lisand3;
+        this.lisand3Hind = lisand3Hind;
     }
 
-    public Double getHind() {
+    public void valiLisand4(String lisand4, Double lisand4Hind) {
+        this.lisand4 = lisand4;
+        this.lisand4Hind = lisand4Hind;
+    }
+
+    public Double koostaBurger() {
+        Double hind = this.hind;
+        System.out.println("Burger " + this.nimetus);
+        System.out.println("Liha " + this.liha);
+        System.out.println("Sai " + this.sai);
+        System.out.println("Hind ilma lisandita " + this.hind);
+        System.out.println("------------------------");
+        if (this.lisand1 != null) {
+            System.out.println("Lisatud " + this.lisand1 + " hinnaga " + this.lisand1Hind);
+            hind = hind + this.lisand1Hind;
+        }
+        if (this.lisand2 != null) {
+            System.out.println("Lisatud " + this.lisand2 + " hinnaga " + this.lisand2Hind);
+            hind = hind + this.lisand2Hind;
+        }
+        if (this.lisand3 != null) {
+            System.out.println("Lisatud " + this.lisand3 + " hinnaga " + this.lisand3Hind);
+            hind = hind + this.lisand3Hind;
+        }
+        if (this.lisand4 != null) {
+            System.out.println("Lisatud " + this.lisand4 + " hinnaga " + this.lisand4Hind);
+            hind = hind + this.lisand4Hind;
+        }
         return hind;
     }
-
-    public void valiLisand1() {
-        System.out.println("Lisandiks on valitud " + this.lisand1 + ", mis maksab " + this.lisand1hind + "€.");
-    }
-
-    public void valiLisand2() {
-        System.out.println("Lisandiks on valitud " + this.lisand2 + ", mis maksab " + this.lisand2hind + "€.");
-    }
-
-    public void valiLisand3() {
-        System.out.println("Lisandiks on valitud " + this.lisand3 + ", mis maksab " + this.lisand3hind + "€.");
-    }
-
-    public void valiLisand4() {
-        System.out.println("Lisandiks on valitud " + this.lisand4 + ", mis maksab " + this.lisand4hind + "€.");
-    }
-
-    public void koostaBurger() {
-        System.out.println("See on " + this.nimetus + " " + this.liha + "ga, mille ümber on " + this.sai + " ning hind on " + this.hind + "€.");
-    }
-
 }

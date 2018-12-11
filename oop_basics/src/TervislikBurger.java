@@ -1,20 +1,35 @@
 public class TervislikBurger extends Burger {
+    private String lisandTervislik1;
+    private Double lisandTervislik1Hind;
 
-    private String tervislikLisand1;
-    private Double tervislikLisand1Hind;
-    private String tervislikLisand2;
-    private Double tervislikLisand2Hind;
+    private String lisandTervislik2;
+    private Double lisandTervislik2Hind;
 
-    public TervislikBurger(String nimetus, String liha, String sai, Double hind) {
-        super(nimetus, liha, sai, hind);
-        this.tervislikLisand1 = "avokaado";
-        this.tervislikLisand1Hind = 1.1;
-        this.tervislikLisand2 = "hummus";
-        this.tervislikLisand2Hind = 0.8;
+    public TervislikBurger(String liha, Double hind) {
+        super("Tervislik Burger", liha, "Teraleib", hind);
+    }
+
+    public void valiTervislikLisand1(String lisandTervislik1, Double lisandTervislik1Hind) {
+        this.lisandTervislik1 = lisandTervislik1;
+        this.lisandTervislik1Hind = lisandTervislik1Hind;
+    }
+
+    public void valiTervislikLisand2(String lisandTervislik2, Double lisandTervislik2Hind) {
+        this.lisandTervislik2 = lisandTervislik2;
+        this.lisandTervislik2Hind = lisandTervislik2Hind;
     }
 
     @Override
-    public void koostaBurger() {
-        System.out.println("See on " + this.getNimetus() + " " + this.getLiha() + "ga, mille ümber on " + this.getSai() + " ning hind on " + this.getHind() + "€.");
+    public Double koostaBurger() {
+        Double hind = super.koostaBurger();
+        if (this.lisandTervislik1 != null) {
+            System.out.println("Lisatud " + this.lisandTervislik1 + " hinnaga " + this.lisandTervislik1Hind);
+            hind = hind + this.lisandTervislik1Hind;
+        }
+        if (this.lisandTervislik2 != null) {
+            System.out.println("Lisatud " + this.lisandTervislik2 + " hinnaga " + this.lisandTervislik2Hind);
+            hind = hind + this.lisandTervislik2Hind;
+        }
+        return hind;
     }
 }
